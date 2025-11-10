@@ -54,7 +54,6 @@ public class TabuadaApp {
         while (i < tabuada.length){
             System.out.println(tabuada[i]);
             i++; // Mesma coisa que i = i + 1
-
         }
     }
 }
