@@ -7,7 +7,7 @@ public class TabuadaApp {
     public int multiplicando;
     public int multiplicadorInicial;
     public int multiplicadorFinal;
-    public String[]tabuada;
+    public String[]tabuada = new String[10];
 
 
     public void receberDados(){
@@ -25,7 +25,7 @@ public class TabuadaApp {
         calcularDados();
     }
 
-    public void calcularDados(){
+    public String[] calcularDados(){
         int apoio = 0;
 
         if (multiplicadorFinal < multiplicadorInicial){
@@ -45,7 +45,9 @@ public class TabuadaApp {
             i = i + 1;
         }
 
-        exibirTabuada();
+        return tabuada;
+        // exibirTabuada();
+
     }
     public void exibirTabuada(){
         System.out.println("Resultado da sua tabuada");
